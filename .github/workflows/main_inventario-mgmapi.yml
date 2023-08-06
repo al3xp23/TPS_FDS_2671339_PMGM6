@@ -22,7 +22,7 @@ jobs:
           java-version: '8'
 
       - name: Build with Maven
-        working-directory: ./backend/ProyectoGinnaMarcela
+        working-directory: ../backend/ProyectoGinnaMarcela
         run: mvn clean install
 
       - name: Upload artifact for deployment job
