@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.proyecto.sena.mgm</groupId>
-	<artifactId>inventary-module</artifactId>
+	<artifactId>proyectoGinnaMarcela</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>inventary-module</name>
+	<name>proyectoGinnaMarcela</name>
 	<description>Proyecto de invetarios</description>
 	<properties>
 		<java.version>1.8</java.version>
@@ -24,12 +24,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
-			<exclusions>
-				<exclusion>
-					<artifactId>snakeyaml</artifactId>
-					<groupId>org.yaml</groupId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 
 		<dependency>
@@ -54,12 +48,6 @@
 	      <groupId>org.springdoc</groupId>
 	      <artifactId>springdoc-openapi-ui</artifactId>
 	      <version>1.6.15</version>
-		   <exclusions>
-			   <exclusion>
-				   <artifactId>snakeyaml</artifactId>
-				   <groupId>org.yaml</groupId>
-			   </exclusion>
-		   </exclusions>
 	   </dependency>
 		
 	</dependencies>

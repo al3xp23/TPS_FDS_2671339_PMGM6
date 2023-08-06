@@ -9,17 +9,17 @@ import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 
 @SpringBootApplication
-public class InventaryApplication {
+public class ProyectoGinnaMarcelaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(InventaryApplication.class, args);
+		SpringApplication.run(ProyectoGinnaMarcelaApplication.class, args);
 	}
 	
 	@Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("MGM")
+                        .title("Gina Marcela Tienda")
                         .version("1.0")
                         .description("Proyecto de Almacen Gina")
                         .termsOfService("http://swagger.io/terms/")

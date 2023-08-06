@@ -71,3 +71,10 @@ form.addEventListener('submit', async (event) => {
     }
     
   });
+
+
+  const formProducto = document.querySelector('#producto-form');
+
+  formProducto.addEventListener('submit', async (event) => {
+    console.log(formProducto);
+  });

@@ -23,7 +23,6 @@
 
 <link rel="stylesheet" href="css/style.css">
 
-
 <link rel="stylesheet" id="theme-switch" href="css/style.css">
 
 	
@@ -68,75 +67,43 @@
 		</div>
 		<div class="slant"></div>
 	</section>
-	<form action="../../form-result.php" method="post" target="_blank">
+	
+	<!-- Para realizar los filtros -->
+	<form id="producto-form" method="get">
 		<p>
-		  Buscar nombre de producto: <input type="search" name="busquedaProducto" placeholder="Buscar">
-		  <input type="submit" value="Buscar">
+		  Buscar nombre de producto: 
+		  <input type="text" name="busquedaProducto" placeholder="Buscar">
+		  <button type="button" onclick="buscarProducto()">Buscar</button> <!-- al dar click va al metodo indicado -->
 		</p>
-	  </form>
-	  <form action="../../form-result.php" method="post" target="_blank">
 		<p>
-		  Buscar producto ID: <input type="search" name="busquedaID" placeholder="0000">
-		  <input type="submit" value="Buscar">
+		  Buscar producto ID: 
+		  <input type="text" name="busquedaID" placeholder="0000">
+		  <button type="button" onclick="buscarProducto()">Buscar</button>
 		</p>
-	  </form>
+	</form>
+
+	<!-- HTML que pinta las tablas (comienzo) -->
 	<section id="estilo-contact" >
-		<div class="container">
-			<div class="row row-bottom-padded-md">
-				<div class="col-md-12">
-					<table class="table">
-						<thead>
-						  <tr>
-							<th scope="col"></th>
-							<th scope="col">codigo</th>
-							<th scope="col">producto</th>
-							<th scope="col">cantidad</th>
-							<th scope="col">valor</th>
-						  </tr>
-						</thead>
-						<tbody>
-						  <tr>
-							<td>
-								<div class="form-check">
-									<input class="form-check-input" type="checkbox" value="" checked>
-								 </div>	
-							</td>
-							<th scope="row">1001</th>
-							<td>lapiceros</td>
-							<td>40</td>
-							<td>$1000</td>
-						  <tr>
-							<td><div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" checked>
-							  </div>
-							</td>
-							<th scope="row">1002</th>
-							<td>cuadernos</td>
-							<td>38</td>
-							<td>$3500</td>
-						  </tr>
-						  <tr>
-							<td><div class="form-check">
-								<input class="form-check-input" type="checkbox" value="" checked>
-							  </div>
-							</td>
-							<th scope="row">1003</th>
-							<td>colbon</td>
-							<td>49</td>
-							<td>$1500</td>
-							</td>
-						  </tr>
-						</tbody>
-					  </table>
-					  
-					</div>
-				</div>
-
-			</div>
-		</div>
+		<div class="container mt-4 shadow-lg p-3 mb-5 bg-body rounded">
+			<table class="table table-bordered table-striped">
+			  <thead>
+				<tr>
+				  <th>codigo</th>
+				  <th>producto</th>
+				  <th>cantidad</th>
+				  <th>marca</th>
+				</th>	
+				</tr>
+			  </thead>
+			  <tbody id="data">
+			  </tbody>
+			</table>
+		  </div>
 	</section>
+	<!-- (fin) -->
 
-			<script src="./js/script.js"></script>
+	<script src="./js/service-producto.js"></script> <!-- Script con la consulta a BD -->
+	<script src="./js/script.js"></script>
 
 	</body>
 </html>

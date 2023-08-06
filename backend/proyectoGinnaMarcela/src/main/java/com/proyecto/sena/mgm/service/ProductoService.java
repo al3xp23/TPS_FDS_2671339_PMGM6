@@ -12,4 +12,6 @@ public interface ProductoService {
 	
 	public ProductosEntity save(ProductosEntity producto);
 	
+	public List<ProductosEntity> buscarProducto(Integer idProducto, String nombreProducto);
+	
 }
