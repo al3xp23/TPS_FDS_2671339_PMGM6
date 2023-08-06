@@ -22,7 +22,7 @@ jobs:
           java-version: '8'
 
       - name: Build with Maven
-        run: pwd && cd .. && pwd
+        run: pwd && ls && cd .. && pwd && ls
         # working-directory: ../backend/ProyectoGinnaMarcela
         # run: mvn clean install
 
